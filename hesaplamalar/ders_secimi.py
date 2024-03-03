@@ -1,12 +1,12 @@
-def hmmenu():
+def ders():
 
     print("╔════════════════════════════════════════╗")
-    print("║ HESAP MAKİNESİ                         ║")
+    print("║ DERSLER                                ║")
     print("║                                        ║")
-    print("║ 1. TOPLAMA                             ║")
-    print("║ 2. ÇIKARMA                             ║")
-    print("║ 3. ÇARPMA                              ║")
-    print("║ 4. BÖLME                               ║")
+    print("║ 1. MATEMATİK                           ║")
+    print("║ 2. FİZİK                               ║")
+    print("║ 3. KİMYA                               ║")
+    print("║ 4. BİYOLOJİ                            ║")
     print("║                                        ║")
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")

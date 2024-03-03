@@ -1,13 +1,13 @@
-def hmmenu():
+def oyun():
 
     print("╔════════════════════════════════════════╗")
-    print("║ HESAP MAKİNESİ                         ║")
+    print("║ OYUNLAR                                ║")
     print("║                                        ║")
-    print("║ 1. TOPLAMA                             ║")
-    print("║ 2. ÇIKARMA                             ║")
-    print("║ 3. ÇARPMA                              ║")
-    print("║ 4. BÖLME                               ║")
+    print("║ 1. YILAN                               ║")
+    print("║ 2. PACMAN                              ║")
+    print("║ 3. RAID                                ║")
+    print("║ 4. ATEŞ                                ║")
     print("║                                        ║")
-    print("║    SEÇİMİNİZ?                          ║")
+    print("║SEÇİMİNİZ?                              ║")
     print("╚════════════════════════════════════════╝")
     input()

@@ -1,12 +1,12 @@
-def hmmenu():
+def para():
 
     print("╔════════════════════════════════════════╗")
-    print("║ HESAP MAKİNESİ                         ║")
+    print("║ PARA BİRİMLERİ                         ║")
     print("║                                        ║")
-    print("║ 1. TOPLAMA                             ║")
-    print("║ 2. ÇIKARMA                             ║")
-    print("║ 3. ÇARPMA                              ║")
-    print("║ 4. BÖLME                               ║")
+    print("║ 1. USD                                 ║")
+    print("║ 2. AVRO                                ║")
+    print("║ 3. TL                                  ║")
+    print("║ 4. FRANK                               ║")
     print("║                                        ║")
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")

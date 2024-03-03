@@ -1,13 +1,13 @@
-def hmmenu():
+def renk():
 
     print("╔════════════════════════════════════════╗")
-    print("║ HESAP MAKİNESİ                         ║")
+    print("║ RENKLER                                ║")
     print("║                                        ║")
-    print("║ 1. TOPLAMA                             ║")
-    print("║ 2. ÇIKARMA                             ║")
-    print("║ 3. ÇARPMA                              ║")
-    print("║ 4. BÖLME                               ║")
+    print("║ 1. MAVİ                                ║")
+    print("║ 2. KIRMIZI                             ║")
+    print("║ 3. YEŞİL                               ║")
+    print("║ 4. SARI                                ║")
     print("║                                        ║")
-    print("║    SEÇİMİNİZ?                          ║")
+    print("║SEÇİMİNİZ?                              ║")
     print("╚════════════════════════════════════════╝")
     input()
