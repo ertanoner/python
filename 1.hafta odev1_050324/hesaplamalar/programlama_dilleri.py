@@ -1,0 +1,17 @@
+﻿def diller():
+
+    print("╔════════════════════════════════════════╗")
+    print("║ PROGRAMLAMA DİLLERİ                    ║")
+    print("║                                        ║")
+    print("║ 1. PYTHON                              ║")
+    print("║ 2. C#                                  ║")
+    print("║ 3. JAVA                                ║")
+    print("║ 4. DELPHI                              ║")
+    print("║ 5. PHP                                 ║")
+    print("║ 6. BASIC                               ║")
+    print("║ 7. COBOL                               ║")
+    print("║ 8. PASCAL                              ║")
+    print("║                                        ║")    
+    print("║    SEÇİMİNİZ?                          ║")
+    print("╚════════════════════════════════════════╝")
+    input()
