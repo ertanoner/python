@@ -13,7 +13,7 @@ for i in range(30,37):
 print (COLOR["ENDC"])
 
 cevap = str(input("Almanya'nın başkentini küçük harflerle yazınız:"))
-if cevap is "berlin" : print(COLOR["BLUE"],"Doğru")
+if cevap == "berlin" : print(COLOR["BLUE"],"Doğru")
 else : print(COLOR["BORDO"],"Yanlış")
 print (COLOR["ENDC"])
 print ("\n")
