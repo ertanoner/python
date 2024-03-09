@@ -44,9 +44,9 @@ c = str(input("Cinsiyetinizi belirtiniz - Kadın için 'k'- Erkek için 'e':"))
 b = float(input("Boyunuzu cm olarak giriniz :"))
 ek = float((50+(2.3/2.54)*b-152.4))
 kk = float((45.5+(2.3/2.54)*b-152.4))
-if c is "e" : 
+if c == "e" : 
     print("İdeal kilonuz :",ek)
-elif c is "k" : 
+elif c == "k" : 
     print("İdeal kilonuz :",kk)
 else : print("cinsiyeti 'e' veya 'k' olarak giriniz")
    
