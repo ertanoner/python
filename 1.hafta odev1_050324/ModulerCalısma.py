@@ -11,6 +11,7 @@ import hesaplamalar.oyunlar
 import hesaplamalar.renk_secimi
 import hesaplamalar.ders_secimi
 import hesaplamalar.para_birimleri
+import hesaplamalar.programlama_dilleri
 import hesaplamalar.geometrik_sekiller
 import hesaplamalar.arabalar
 import hesaplamalar.faturalar
