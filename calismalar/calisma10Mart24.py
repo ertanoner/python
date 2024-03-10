@@ -1,1 +1,1 @@
-print("deneme 10 Mart 2024")
+print("deneme 2 10 Mart 2024")
