@@ -1,0 +1,1 @@
+print("deneme 10 Mart 2024")
