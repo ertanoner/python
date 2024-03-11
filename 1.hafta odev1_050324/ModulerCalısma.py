@@ -10,8 +10,8 @@ import hesaplamalar.yas_hesabi
 import hesaplamalar.oyunlar
 import hesaplamalar.cisimHavadaKalmaSuesi
 import hesaplamalar.harfnotu
+import hesaplamalar.dovizKURU
 import hesaplamalar.programlama_dilleri
-import hesaplamalar.para_birimleri
 import hesaplamalar.geometrik_sekiller
 import hesaplamalar.arabalar
 import hesaplamalar.faturalar
@@ -25,7 +25,7 @@ def anamenu():
     print("║ 3.  OYUNLAR                            ║")
     print("║ 4.  CİSİMİN DÜŞME SÜRESİ               ║")
     print("║ 5.  PUAN HARF NOTU BELİRLEME           ║")
-    print("║ 6.  PARA BİRİMLERİ                     ║") 
+    print("║ 6.  DÖVİZ KUR ÇEVİRİCİSİ               ║") 
     print("║ 7.  PROGRAMLAMA DİLLERİ                ║")
     print("║ 8.  GEOMETRİK ŞEKİLLER                 ║")
     print("║ 9.  ARABALAR                           ║")
@@ -50,7 +50,7 @@ def anamenu():
         hesaplamalar.harfnotu.harfnotu()
         anamenu()
     elif secim == "6" :
-        hesaplamalar.para_birimleri.para()
+        hesaplamalar.dovizKURU.doviz()
         anamenu()
     elif secim == "7" :
         hesaplamalar.programlama_dilleri.diller()
