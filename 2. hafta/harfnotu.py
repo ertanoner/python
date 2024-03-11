@@ -8,6 +8,4 @@ def harfnotu():
         if DN< 70 and DN> 54 :print("C aldınız")
         if DN< 55 and DN> 45 :print("D aldınız, sorumlu geçtiniz")
         if DN< 45 :print("E aldınız, kaldınız")
-    
-                               
-    
+harfnotu()            

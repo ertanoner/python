@@ -138,4 +138,3 @@ def yilan():
                 hiz = 0.15
     
         time.sleep(delay)
-yilan()        

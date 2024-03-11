@@ -1,7 +1,8 @@
+import json
+import os
+
 def adam():
-    import json
-    import os
-    
+
     try:
         from termcolor import cprint
     except ImportError:
@@ -157,7 +158,5 @@ def adam():
             if input("Devam?(e/h) ").lower() == "h":
                 tekrar_edecek_mi = False
     
+    main()
   
-    main()  
-
-adam()
