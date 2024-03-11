@@ -8,10 +8,9 @@
 import hesaplamalar.hesapmakinesi
 import hesaplamalar.yas_hesabi
 import hesaplamalar.oyunlar
-import hesaplamalar.renk_secimi
-import hesaplamalar.ders_secimi
+import hesaplamalar.cisimHavadaKalmaSuesi
+import hesaplamalar.harfnotu
 import hesaplamalar.para_birimleri
-import hesaplamalar.programlama_dilleri
 import hesaplamalar.geometrik_sekiller
 import hesaplamalar.arabalar
 import hesaplamalar.faturalar
@@ -23,8 +22,8 @@ def anamenu():
     print("║ 1.  HESAPMAKİNESİ                      ║")
     print("║ 2.  YAŞ HESABI                         ║")
     print("║ 3.  OYUNLAR                            ║")
-    print("║ 4.  RENKLER                            ║")
-    print("║ 5.  DERS SEÇİMİ                        ║")
+    print("║ 4.  CİSİMİN DÜŞME SÜRESİ               ║")
+    print("║ 5.  PUAN HARF NOTU BELİRLEME           ║")
     print("║ 6.  PARA BİRİMLERİ                     ║") 
     print("║ 7.  PROGRAMLAMA DİLLERİ                ║")
     print("║ 8.  GEOMETRİK ŞEKİLLER                 ║")
@@ -44,10 +43,10 @@ def anamenu():
         hesaplamalar.oyunlar.oyun()
         anamenu()
     elif secim == "4" :
-        hesaplamalar.renk_secimi.renk()
+        hesaplamalar.cisimHavadaKalmaSuesi.cisim()
         anamenu()
     elif secim == "5" :
-        hesaplamalar.ders_secimi.ders()
+        hesaplamalar.harfnotu.harfnotu()
         anamenu()
     elif secim == "6" :
         hesaplamalar.para_birimleri.para()
