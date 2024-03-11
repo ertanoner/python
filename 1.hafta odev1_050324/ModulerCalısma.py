@@ -10,6 +10,7 @@ import hesaplamalar.yas_hesabi
 import hesaplamalar.oyunlar
 import hesaplamalar.cisimHavadaKalmaSuesi
 import hesaplamalar.harfnotu
+import hesaplamalar.programlama_dilleri
 import hesaplamalar.para_birimleri
 import hesaplamalar.geometrik_sekiller
 import hesaplamalar.arabalar
