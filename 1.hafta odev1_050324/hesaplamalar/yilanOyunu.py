@@ -1,7 +1,7 @@
+import random
+import turtle
+import time
 def yilan():
-    import random
-    import turtle
-    import time
     delay = 0.15
     
     pencere = turtle.Screen()

@@ -1,4 +1,5 @@
-import yilanOyunu
+import hesaplamalar.yilanOyunu
+import hesaplamalar.tetris
 
 def oyun():
 
@@ -14,7 +15,8 @@ def oyun():
     print("╚════════════════════════════════════════╝")
     secim = input()
     if secim == "1" :
-        yilanOyunu.yilan()
+        hesaplamalar.yilanOyunu.yilan()
         oyun()
     elif secim == "2" :
-        
+        hesaplamalar.tetris.tetris()
+        oyun()
