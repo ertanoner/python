@@ -7,10 +7,9 @@
     print("║ 2. C#                                  ║")
     print("║ 3. JAVA                                ║")
     print("║ 4. DELPHI                              ║")
-    print("║ 5. PHP                                 ║")
-    print("║ 6. BASIC                               ║")
-    print("║ 7. COBOL                               ║")
-    print("║ 8. PASCAL                              ║")
+    print("║ 5. BASIC                               ║")
+    print("║ 6. COBOL                               ║")
+    print("║ 7. PASCAL                              ║")
     print("║                                        ║")    
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")
@@ -42,4 +41,12 @@
             print("Erken döneminde yalnızca Windows tarafından desteklenen Delphi, 2001 yılındaki girişimler sayesinde Linux")
             print("ortamında da kullanılabilmektedir.")
             input()
+    elif secim == "5" :
+            print("BASIC öğrenmesi ve yazılımları kolay olan bir dildir. Genelde amatörce ve hobi uğraşıları için")            
+            print("kullanılmıştır. Microsoft daha sonra Kişisel bilgisayarlar için Quick Basic derleyicisi piyasaya sürmüştür.")
+            print("Bununla yazılan BASIC metinlerini makine koduna çevirilebilmiş böylece sürat kazanmıştır. Bugün hâlen geniş")
+            print("bir kullanım alanına sahip olan Visual Basic dili var olup bununla hatta Windows'un belirli bölümleri yazılmıştır.")
+            print("Her Microsoft Office paketinde bir BASIC türevi var olup makro programlamada büyük kolaylıklar getirmektedir.")
+            input()
+
 
