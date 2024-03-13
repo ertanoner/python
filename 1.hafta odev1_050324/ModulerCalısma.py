@@ -29,8 +29,9 @@ def anamenu():
     print("║ 7.  PROGRAMLAMA DİLLERİ                ║")
     print("║ 8.  GEOMETRİK ŞEKİLLER                 ║")
     print("║ 9.  ARABALAR                           ║")
-    print("║ 10. FATURALAR                          ║")    
-    print("║                                        ║")
+    print("║ 10. FATURALAR                          ║") 
+    print("║                                        ║")   
+    print("║ ç  : ÇIKIŞ                             ║")
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")   
     secim = input()
@@ -64,4 +65,5 @@ def anamenu():
     elif secim == "10" :
         hesaplamalar.faturalar.faturalar()
         anamenu()
+    elif secim == "ç" : exit()
 anamenu()
