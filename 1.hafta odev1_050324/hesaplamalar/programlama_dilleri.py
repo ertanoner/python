@@ -9,7 +9,7 @@
     print("║ 4. DELPHI                              ║")
     print("║ 5. BASIC                               ║")
     print("║ 6. COBOL                               ║")
-    print("║ 7. PASCAL                              ║")
+    print("║ 7. TURBO PASCAL                        ║")
     print("║                                        ║")    
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")
@@ -48,5 +48,19 @@
             print("bir kullanım alanına sahip olan Visual Basic dili var olup bununla hatta Windows'un belirli bölümleri yazılmıştır.")
             print("Her Microsoft Office paketinde bir BASIC türevi var olup makro programlamada büyük kolaylıklar getirmektedir.")
             input()
-
-
+    elif secim == "6" :
+            print("COBOL, sözcüklerin tam hali olarak 'Common Business-Oriented Language' (Genel İş Odaklı Dil) olarak adlandırılır.")            
+            print("Bu programlama dili, özellikle 60'ların ortalarında, çeşitli finansal ve veri işleme uygulamalarını yürütmek için")
+            print("tasarlanmıştır. COBOL, işletmelerin çeşitli işlemlerini otomatikleştirmek için kullanılır, örneğin hesap makinesi,")
+            print("fatura işleme, ödeme işlemleri ve stok yönetimi gibi. COBOL, genellikle makine okunabilir raporlar ve veri dosyalarının")
+            print("işlenmesi için tasarlanmıştır. COBOL, daha önceki programlama dillerinden farklı olarak, işletmelerin gerçek dünya")
+            print("işlemlerini yansıtmak için yazılmıştır.")
+            input()
+    elif secim == "7" :
+            print("Turbo Pascal, 1980'lerin ortalarında piyasaya sürüldü ve o zamanlar popüler olan Apple ve Commodore gibi")            
+            print("bilgisayarlarda çalışmak üzere tasarlanmıştı. Uygun fiyatlı olması ve kolay kullanımı ile birçok geliştirici")
+            print("tarafından benimsenmiş ve popüler hale gelmişti. Ayrıca kullanımı kolay grafik ve veritabanı desteği sunmasıyla")
+            print("da tanınmıştır. Turbo Pascal'ın en son sürümü, 1990 yılında piyasaya sürülmüştür ve günümüzde artık")
+            print("desteklenmemektedir. Yine de Pascal programlama dili hala aktif olarak kullanılmakta ve güncellenmiş")
+            print("birçok versiyonu bulunmaktadır.")
+            input()
