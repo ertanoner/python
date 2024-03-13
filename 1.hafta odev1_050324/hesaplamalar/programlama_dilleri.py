@@ -1,8 +1,8 @@
 ﻿def diller():
 
     print("╔════════════════════════════════════════╗")
-    print("║ PROGRAMLAMA DİLLERİ                    ║")
-    print("║                                        ║")
+    print("║ PROGRAMLAMA DİLLERİ HAKKINDA KISA      ║")
+    print("║               BİLGİLER                 ║")
     print("║ 1. PYTHON                              ║")
     print("║ 2. C#                                  ║")
     print("║ 3. JAVA                                ║")
@@ -14,4 +14,32 @@
     print("║                                        ║")    
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")
-    input()
+    secim = input()
+    if secim == "1" :
+            print("Python; web uygulamaları, yazılım geliştirme, veri bilimi ve makine öğreniminde (ML)")            
+            print("yaygın olarak kullanılan bir programlama dilidir. Geliştiriciler, etkili ve öğrenmesi")
+            print("kolay olduğu ve birçok farklı platformda çalıştırılabildiği için Python'ı kullanır.")
+            print("Python yazılımı ücretsiz olarak indirilebilir, her türlü sistemle iyi bir entegrasyon")
+            print("sağlar ve geliştirme hızını artırır.")
+            input()
+    elif secim == "2" :
+            print("C# (si şarp diye okunur) Microsoft tarafından geliştirilmiş olan bir programlama dilidir.")            
+            print("C++ ve Java dillerine oldukça benzer, ancak C#'ın bu dillere benzerliği yanında farkları da vardır.")
+            print("Örneğin C#, C++'dan farklı olarak % 100 nesne yönelim tekniğine sahiptir. Java'dan farklı olarak ise")
+            print("C#'ta gösterici (pointer) kullanılabilir. Böylelikle eski yazılım bileşenleriyle uyumlu bir şekilde çalışılabilir.")
+            input()
+    elif secim == "3" :
+            print("Java, web uygulamalarını kodlamada yaygın olarak kullanılan bir programlama dilidir. Yirmi yıldan uzun")            
+            print("bir süredir geliştiriciler tarafından tercih edilen popüler bir dil olması nedeniyle günümüzde kullanımda")
+            print("olan milyonlarca Java uygulaması bulunmaktadır. Java çok platformlu, nesne odaklı ve ağ merkezli bir dil")
+            print("olup kendisi de bir platform olarak kullanılabilir. Mobil uygulamalar ve kurumsal yazılımlardan büyük veri")
+            print("uygulamalarına ve sunucu tarafı teknolojilere kadar her türlü yazılımı kodlamada kullanılabilecek hızlı,")
+            print("güvenli ve güvenilir bir programlama dilidir.")
+            input()
+    elif secim == "4" :
+            print("Delphi, nesne yönelimli tasarımı destekleyen yüksek seviyeli bir programlama dilidir.")            
+            print("Delphi ile veritabanı çözümlerinden mobil çözümlere kadar birçok yazılım uygulaması ihtiyacı karşılanabilir.")
+            print("Erken döneminde yalnızca Windows tarafından desteklenen Delphi, 2001 yılındaki girişimler sayesinde Linux")
+            print("ortamında da kullanılabilmektedir.")
+            input()
+
