@@ -15,9 +15,13 @@ def sekiller():
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")
     secim = input()
-    if secim == "4" :
+    if secim == "1" :
+        print()
+        input()
+    
+    elif secim == "4" :
         hesaplamalar.cokgen.cokgen()
-        anamenu()
+        input()
     elif secim == "5" :
         hesaplamalar.prizma.prizma()
-        anamenu()
+        input()
