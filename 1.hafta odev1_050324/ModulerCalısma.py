@@ -13,23 +13,21 @@ import hesaplamalar.harfnotu
 import hesaplamalar.dovizKURU
 import hesaplamalar.programlama_dilleri
 import hesaplamalar.geometrik_sekiller
-import hesaplamalar.arabalar
-import hesaplamalar.faturalar
+
 
 def anamenu():
+
     print("╔════════════════════════════════════════╗")
-    print("║ VEKTOREL DERS                          ║")
+    print("║ VEKTOREL 1. PROJE                      ║")
     print("║                                        ║")
     print("║ 1.  HESAPMAKİNESİ                      ║")
     print("║ 2.  YAŞ HESABI                         ║")
     print("║ 3.  OYUNLAR                            ║")
-    print("║ 4.  CİSİMİN DÜŞME SÜRESİ               ║")
+    print("║ 4.  CİSMİN DÜŞME SÜRESİ                ║")
     print("║ 5.  PUAN HARF NOTU BELİRLEME           ║")
     print("║ 6.  DÖVİZ KUR ÇEVİRİCİSİ               ║") 
-    print("║ 7.  PROGRAMLAMA DİLLERİ                ║")
+    print("║ 7.  PROGRAMLAMA DİLLERİ HAKINDA BİLGİ  ║")
     print("║ 8.  GEOMETRİK ŞEKİLLER                 ║")
-    print("║ 9.  ARABALAR                           ║")
-    print("║ 10. FATURALAR                          ║") 
     print("║                                        ║")   
     print("║ ç  : ÇIKIŞ                             ║")
     print("║    SEÇİMİNİZ?                          ║")
@@ -58,12 +56,6 @@ def anamenu():
         anamenu()
     elif secim == "8" :
         hesaplamalar.geometrik_sekiller.sekiller()
-        anamenu()
-    elif secim == "9" :
-        hesaplamalar.arabalar.arabalar()
-        anamenu()
-    elif secim == "10" :
-        hesaplamalar.faturalar.faturalar()
         anamenu()
     elif secim == "ç" : exit()
 anamenu()
