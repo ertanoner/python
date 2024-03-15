@@ -9,7 +9,7 @@
     print("║ 4. CEP TELEFONU FATURASI               ║")
     print("║ 5. INTERNET FATURASI                   ║")
     print("║                                        ║")    
-    print("║    SEÇİMİNİZ?                          ║")
+    print("║    ..SEÇİMİNİZ?                        ║")
     print("╚════════════════════════════════════════╝")
     input()
 
