@@ -13,6 +13,7 @@ import hesaplamalar.harfnotu
 import hesaplamalar.dovizKURU
 import hesaplamalar.programlama_dilleri
 import hesaplamalar.geometrik_sekiller
+import hesaplamalar.arabalar
 
 
 def anamenu():
@@ -28,6 +29,7 @@ def anamenu():
     print("║ 6.  DÖVİZ KUR ÇEVİRİCİSİ               ║") 
     print("║ 7.  PROGRAMLAMA DİLLERİ HAKINDA BİLGİ  ║")
     print("║ 8.  GEOMETRİK ŞEKİLLER                 ║")
+    print("║ 9.  OTOMOBİL MARKALARI                 ║")  
     print("║                                        ║")   
     print("║ ç  : ÇIKIŞ                             ║")
     print("║    SEÇİMİNİZ?                          ║")
@@ -56,6 +58,9 @@ def anamenu():
         anamenu()
     elif secim == "8" :
         hesaplamalar.geometrik_sekiller.sekiller()
+        anamenu()
+    elif secim == "9" :
+        hesaplamalar.arabalar.arabalar()
         anamenu()
     elif secim == "ç" : exit()
 anamenu()
