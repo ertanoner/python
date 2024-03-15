@@ -14,6 +14,7 @@ import hesaplamalar.dovizKURU
 import hesaplamalar.programlama_dilleri
 import hesaplamalar.geometrik_sekiller
 import hesaplamalar.arabalar
+import hesaplamalar.renk_secimi
 
 
 def anamenu():
@@ -30,7 +31,8 @@ def anamenu():
     print("║ 7.  PROGRAMLAMA DİLLERİ HAKINDA BİLGİ  ║")
     print("║ 8.  GEOMETRİK ŞEKİLLER                 ║")
     print("║ 9.  OTOMOBİL MARKALARI                 ║")  
-    print("║                                        ║")   
+    print("║ 10. RENK SEÇİMİ                        ║")
+    print("║                                        ║")      
     print("║ ç  : ÇIKIŞ                             ║")
     print("║    SEÇİMİNİZ?                          ║")
     print("╚════════════════════════════════════════╝")   
@@ -61,6 +63,9 @@ def anamenu():
         anamenu()
     elif secim == "9" :
         hesaplamalar.arabalar.arabalar()
+        anamenu()
+    elif secim == "10" :
+        hesaplamalar.renk_secimi.renk()
         anamenu()
     elif secim == "ç" : exit()
 anamenu()
