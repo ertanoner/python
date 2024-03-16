@@ -9,7 +9,7 @@ sayi2 = int(input("2.sayı nedir?:"))
 
 print (topla(sayi1,sayi2))
 
-print(carp(sayi1,sayi2))
+print (carp(sayi1,sayi2))
 
 
 
