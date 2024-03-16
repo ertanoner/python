@@ -9,7 +9,7 @@ print(COLOR["BORDO"], "Bordo", COLOR["BLUE"],"Mavi", COLOR["ENDC"])
 print ("\n")
 
 for i in range(30,37):
-    print (f"\033[1;{i};40m Rengarenk  \n")
+    print (f"\033[1;{i};40m Rengarenk")
 print (COLOR["ENDC"])
 
 cevap = str(input("Almanya'nın başkentini küçük harflerle yazınız:"))
