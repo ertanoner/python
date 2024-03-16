@@ -14,7 +14,7 @@ for xx in range(hak):
         break
     elif tahmin > tutulan:
         print("Tahminin büyük.")
-        tahmin = int(input("Tahminin nedir?"))
+        
     elif tahmin < tutulan:
         print("Tahminin küçük.")
-        tahmin = int(input("Tahminin nedir?")
+        
