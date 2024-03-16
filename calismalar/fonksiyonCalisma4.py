@@ -1,3 +1,5 @@
+
+
 def merhabade():   #merhabade isimli fonksiyon
   print("Merhaba")
   print("Nasılsın")
