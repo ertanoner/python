@@ -14,6 +14,7 @@ for b in meyveler:
 for _ in range(5):
     print(_,"Python")
 
+#dizide 1 den 9 a kadar tek sayıları yaz
 print ("Tek Sayılar:",{sayi for sayi in range(1,9,2)})
 
 
