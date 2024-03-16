@@ -48,18 +48,18 @@ def renk():
     print("╚════════════════════════════════════════╝")
     secim = input()
     if secim == "1" :
-        print(COLOR["BLUE"], COLOR["ENDC"])
+        print(COLOR["BLUE"], "MAVİ", COLOR["ENDC"])
         print ("\n")
         input()
     elif secim == "2" :
-        print(COLOR["RED"], COLOR["ENDC"])
+        print(COLOR["RED"], "KIRMIZI", COLOR["ENDC"])
         print ("\n")
         input()
     elif secim == "3" :
-        print(COLOR["GREEN"], COLOR["ENDC"])
+        print(COLOR["GREEN"], "YEŞİL", COLOR["ENDC"])
         print ("\n")
         input() 
     elif secim == "4" :
-        print(COLOR["YELLOW"], COLOR["ENDC"])
+        print(COLOR["YELLOW"], "SARI", COLOR["ENDC"])
         print ("\n")
         input()            
