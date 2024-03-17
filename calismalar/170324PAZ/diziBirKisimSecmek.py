@@ -10,5 +10,3 @@ print("Aradan Alma:", yemekler[:3])   #indis 3 ten evvelki verileri alır
 print("Aradan Alma:", yemekler[3:])   #indis 3 ten itibaren verileri alır
 print("Aradan Alma:", yemekler[:])    #hepsini alır
 
-
-
