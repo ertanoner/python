@@ -1,3 +1,4 @@
+#dizideki tekrar eden elemanların sayısı
 sayilar = [2,6,5,8,7,7,1,5]
 for a in sayilar:
     print(a)
@@ -12,5 +13,5 @@ for a in range(len(sayilar)):
         if a == sayilar[a] : sayilar[b] : print(sayilar[a])
     #print(a)
 
-    
+
     # tamamlanmamış
