@@ -26,7 +26,7 @@ def cizimmenu():
     print("║  3-Beşgen           ║")
     print("║  4-Altıgen          ║")
     print("║                     ║")
-    print("║    Seçimiz nedir?   ║")
+    print("║    Seçimiz nedir.   ║")
     print("╚═════════════════════╝")
     secim = input()
     if secim == "1" : kare()
