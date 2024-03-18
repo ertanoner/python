@@ -55,7 +55,18 @@ liste = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s"
 # print(liste[1:9:2])
 # print(liste[-3:-11:-2]) #sondan 3. indisten sondan başa 11. indise kadar 2 şer geri gelerek yaz.
 
-    
+# meyveler = ["elma","armut","üzüm","nar"]
+# print(meyveler)
+# meyveler +=["portakal","mandalina","greyfurt"]
+# print(meyveler)
+# yeniMeyveler=["çilek","böğürtlen"]
+# meyveler +=yeniMeyveler
+# print(meyveler)
+
+
+
+
+  
     
        
     
