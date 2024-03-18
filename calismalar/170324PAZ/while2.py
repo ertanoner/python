@@ -44,7 +44,7 @@
 #     print(x, liste[x]) 
 
     
-liste = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","y","z"]
+# liste = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","y","z"]
 # print(liste.index("y"))  # y harfinin indis numarasını gösterir
 # print(liste[2:9])
 # print(liste[:])  #hepsi
@@ -64,8 +64,12 @@ liste = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s"
 # print(meyveler)
 
 
-
-
+meyveler = []
+eklenecek = " "
+while eklenecek != "":
+    eklenecek = input("Eklenecek meyve:")
+    if eklenecek !="": meyveler.append(eklenecek)
+    print(meyveler)
   
     
        
