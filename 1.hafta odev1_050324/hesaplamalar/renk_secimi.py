@@ -33,7 +33,7 @@ COLOR = {
     "RED": "\033[31m",
     "GREEN": "\033[32m",
     "YELLOW": "\033[33m",
-    "PURPLE ": "\033[0;35m"
+    "PURPLE": "\033[0;35m"
 }
 def renk():
 
