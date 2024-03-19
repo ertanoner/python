@@ -33,6 +33,7 @@ COLOR = {
     "RED": "\033[31m",
     "GREEN": "\033[32m",
     "YELLOW": "\033[33m",
+    "PURPLE ": "\033[0;35m"
 }
 def renk():
 
@@ -43,6 +44,7 @@ def renk():
     print("║ 2. KIRMIZI                             ║")
     print("║ 3. YEŞİL                               ║")
     print("║ 4. SARI                                ║")
+    print("║ 5. MOR                                 ║")
     print("║                                        ║")
     print("║SEÇİMİNİZ?                              ║")
     print("╚════════════════════════════════════════╝")
@@ -63,3 +65,7 @@ def renk():
         print(COLOR["YELLOW"], "SARI", COLOR["ENDC"])
         print ("\n")
         input()            
+    elif secim == "5" :
+        print(COLOR["PURPLE"], "MOR", COLOR["ENDC"])
+        print ("\n")
+        input()  

@@ -17,4 +17,3 @@ def doviz():
     except KeyError:
         sys.stderr.write("Lütfen para birimlerini doğru girin")
         sys.stderr.flush()
-        print()
