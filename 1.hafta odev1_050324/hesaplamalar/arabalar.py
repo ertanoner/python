@@ -1,7 +1,7 @@
 ﻿def arabalar():
 
     print("╔════════════════════════════════════════╗")
-    print("║ ARABA MARKALARI                        ║")
+    print("║ OTOMOBİL MARKALARI                     ║")
     print("║                                        ║")
     print("║ 1. VOLKSWAGEN                          ║")
     print("║ 2. TOYOTA                              ║")
