@@ -20,7 +20,7 @@ import hesaplamalar.renk_secimi
 def anamenu():
 
     print("╔════════════════════════════════════════╗")
-    print("║ VEKTOREL 1. PROJE                      ║")
+    print("║ VEKTOREL 1. PROJE ANA MENÜ             ║")
     print("║                                        ║")
     print("║ 1.  HESAPMAKİNESİ                      ║")
     print("║ 2.  YAŞ HESABI                         ║")
