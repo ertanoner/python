@@ -13,3 +13,5 @@ print(random.choice(mey))
 # yukarıdaki girdilere göre rastgele bir cümle seçimi
 print(f"Haftalık {random.randint(1,5)}kg {random.choice(mey)} alınız.")
 
+print(f"Her gün marketten {random.randint(2,8)} kg {random.choice(mey)} alıp eve getiririz.")
+
