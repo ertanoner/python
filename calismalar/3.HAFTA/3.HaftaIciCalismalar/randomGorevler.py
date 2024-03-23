@@ -35,30 +35,40 @@ import random
 
 
 #3. Görev: Sayı tahmin oyunu
-baslangic=1
-son=100
-hak = 5
-puan=100
-secilen = random.randint(baslangic,son)
-print(secilen)
-print(f"{baslangic} ile {son} arasında rastgele belirlenen sayıyı tahmin ediniz.")
-print(f"{hak} hakkınız var.")
+# baslangic=1
+# son=100
+# hak = 5
+# puan=100
+# secilen = random.randint(baslangic,son)
+# print(secilen)
+# print(f"{baslangic} ile {son} arasında rastgele belirlenen sayıyı tahmin ediniz.")
+# print(f"{hak} hakkınız var.")
 
-for a in range(hak):
-    tahmin = int(input("Tahmininiz nedir?: "))
-    if tahmin == secilen:
-        print("Bildiniz.")
-        print("Puanınız:",puan)
-        break
+# for a in range(hak):
+#     tahmin = int(input("Tahmininiz nedir?: "))
+#     if tahmin == secilen:
+#         print("Bildiniz.")
+#         print("Puanınız:",puan)
+#         break
 
-    elif tahmin > secilen:
-        print("Tahmininiz büyük.")
-        puan -= 100//hak
-        print("Puanınız:", puan)
+#     elif tahmin > secilen:
+#         print("Tahmininiz büyük.")
+#         puan -= 100//hak
+#         print("Puanınız:", puan)
         
-    elif tahmin < secilen:
-        print("Tahminin küçük.")
-        puan -= 100//hak
-        print("Puanınız:", puan)
+#     elif tahmin < secilen:
+#         print("Tahminin küçük.")
+#         puan -= 100//hak
+#         print("Puanınız:", puan)
 
-    if a == hak-1: print("Kaybettiniz")    
+#     if a == hak-1: print("Kaybettiniz")   
+
+
+
+sinif = ['Ahmet', 'Mehmet', 'Fikret','Saffet','Hikmet','Nusret','Behçet','Damla','Eda','Çağla']
+print(sinif)
+print("Enter'e basarak sınıftan rastgele bir isim seçiniz")
+input()
+print(random.choice(sinif)) #listeden rastgele 1 isim seçer
+
+
