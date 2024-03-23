@@ -64,11 +64,14 @@ import random
 #     if a == hak-1: print("Kaybettiniz")   
 
 
+#4. Görev: Sınıftan rastgele bir isim seçmek
+# sinif = ['Ahmet', 'Mehmet', 'Fikret','Saffet','Hikmet','Nusret','Behçet','Damla','Eda','Çağla']
+# print(sinif)
+# print("Enter'e basarak sınıftan rastgele bir isim seçiniz")
+# input()
+# print(random.choice(sinif)) #listeden rastgele 1 isim seçer
 
-sinif = ['Ahmet', 'Mehmet', 'Fikret','Saffet','Hikmet','Nusret','Behçet','Damla','Eda','Çağla']
-print(sinif)
-print("Enter'e basarak sınıftan rastgele bir isim seçiniz")
-input()
-print(random.choice(sinif)) #listeden rastgele 1 isim seçer
+
+
 
 
