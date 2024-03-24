@@ -11,6 +11,6 @@
 
 
 a = int(input("Bugün veya geçmiş en yakın artık yılı giriniz:"))
-for xx in range (a,0,-4):
+for xx in range (a,-1,-4):
     print(xx,end=",")
 
