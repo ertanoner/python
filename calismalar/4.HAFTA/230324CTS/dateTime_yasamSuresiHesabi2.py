@@ -31,7 +31,6 @@ else: yay= yeniay+12-day; yeniyil=yil-1
 
 yyil=yeniyil-dyil
 
-# if day in 
 
 print(f"{yyil} yıl {yay} ay ve {ygun} gündür hayattasınız.")
 
