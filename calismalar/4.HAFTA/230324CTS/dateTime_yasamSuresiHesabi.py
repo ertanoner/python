@@ -6,9 +6,13 @@ gun = int(datetime.datetime.now().strftime("%d"))
 print("Tarih saat =",bugun)
 dgunu = input("Doğum tarihin nedir? (01.01.2000 gibi yaz)")
 print(dgunu)
+
+
 dyil = int(dgunu[6:10])
 day = int(dgunu[3:5])
 dgun = int(dgunu[0:2])
+    
+while dgun>31 or day>12 : (print("Yanlış tarih girdiniz.")); exit()
 
 yeniay=ay
 yeniyil=yil
