@@ -9,7 +9,7 @@
 #     if a%4==0 : print(a,"artık yıl")
 #     else: print (a,"artık yıl değil") 
 
-
+#
 a = int(input("Bugün veya geçmiş en yakın artık yılı giriniz:"))
 for xx in range (a,-1,-4):
     print(xx,end=",")
