@@ -1,1 +1,1 @@
-['Mahir', 'Barýþ', 'Þeyma', 'Metin', 'Ertan']
+{'Adi': 'Barýþ', 'Nmarasi': '346326'}
