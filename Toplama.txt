@@ -1,0 +1,4 @@
+2 sayının toplamı:
+S1=input(1.sayıyı giriniz:
+S2=input(2.sayıyı giriniz:
+print(S1+S2
