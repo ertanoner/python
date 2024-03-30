@@ -1,0 +1,7 @@
+abc = open("program1.py", "w")
+abc.write("#Bu program python tarafından otomatik oluşturulmuştur.")
+abc.write("\na = input('Bir kelime gir: ')")
+# abc.write("\nyazilacak=a+\'\\n\'")
+abc.write("\nprint(a*20)")
+abc.write("\ninput()")
+abc.close()
