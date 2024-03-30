@@ -11,7 +11,7 @@ while ad != "" or no != "" :
     "Adi" : ad ,
     "Numarasi" : no
     }
-    dosya.write(f"{str(ogrenci)}\n")
+    dosya.write(f"{str(ogrenci)},\n")
 
 dosya.close()
 
