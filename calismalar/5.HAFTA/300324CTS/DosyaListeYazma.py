@@ -1,4 +1,4 @@
-
+#yazarken string e çecirmek gerekir.
 ogrenciler = ["Mahir", "Barış", "Şeyma", "Metin","Ertan"]
 dosya = open("deneme3.txt","w")
 dosya.write(str(ogrenciler))
