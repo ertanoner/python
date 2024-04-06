@@ -9,6 +9,6 @@
 # f.write("\nDosyaya ekleme yapma!")
 # f.close()
 
-# ekleme sonrası dosya içeriğine bakma
-f = open("rehber.txt", "r")
-print(f.read())
+# # ekleme sonrası dosya içeriğine bakma
+# f = open("rehber.txt", "r")
+# print(f.read())
