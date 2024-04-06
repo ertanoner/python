@@ -1,4 +1,5 @@
 Dosyaya kaydedilen veri.
 Ýkinci satýr!!
 Üçüncü satýr
-Dördüncü satýr
+Dördüncü satýrDosyaya ekleme yapma!
+Dosyaya ekleme yapma!
