@@ -1,3 +1,10 @@
 Dosyaya kaydedilen veri.
+<<<<<<< HEAD
 Ikinci satir!!
 Üçüncü satir
+=======
+Ýkinci satýr!!
+Üçüncü satýr
+Dördüncü satýrDosyaya ekleme yapma!
+Dosyaya ekleme yapma!
+>>>>>>> bb76caa7ec30dab0c6183d3395108ba243887dcd
