@@ -1,0 +1,7 @@
+# # rehber0 dan rehber 9 a kadar isimlendirilen 10 adet txt dosyası oluşturup içerisine Deneme1 yazılması 
+
+# for a in range(10):
+#     dosya = open(f"rehber{a}.txt","w")
+#     dosya.write("Deneme1")
+#     dosya.close()
+
