@@ -13,7 +13,7 @@
 # dosya.close()
 
 
-# # #  Dosya oluşturma ve yazma GÖREVLER-3
+# # Dosya oluşturma ve yazma GÖREVLER-3
 
 # ad = input("Kaydedilecek kişi adı ve soyadı:      ")
 # no = input("Kaydedilecek kişi numarası: ")
@@ -27,6 +27,12 @@
 # print(okunan.read())
 # okunan.close()
 
+# #  Dosya oluşturma ve yazma GÖREVLER-4
+
+# ad = input("Adınızı giriniz..:")
+# kla = open("merhaba.py","w")
+# kla.write(f'print("Merhaba {ad}")')
+# kla.close()
 
 
 
