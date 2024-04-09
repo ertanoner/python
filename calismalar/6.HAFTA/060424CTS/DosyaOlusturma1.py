@@ -11,4 +11,4 @@
 
 # # ekleme sonrası dosya içeriğine bakma
 # f = open("rehber.txt", "r")
-# print(f.read()) #
+# print(f.read()) 
