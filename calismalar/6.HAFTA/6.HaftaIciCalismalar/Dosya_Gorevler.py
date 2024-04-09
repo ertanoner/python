@@ -13,16 +13,24 @@
 # dosya.close()
 
 
-# import ast
-# okunan = open("gollem.txt")
-# for a in okunan:
-#     bb = okunan.readline()
-#     # print(bb)
-#     # cevirilen = bb
-#     cevirilen = ast.literal_eval(bb)
-#     # print(cevirilen)
-#     print(cevirilen["Adi"])
-#     # print(cevirilen["Numarasi"])
+# # #  Dosya oluşturma ve yazma GÖREVLER-3
+
+# ad = input("Kaydedilecek kişi adı ve soyadı:      ")
+# no = input("Kaydedilecek kişi numarası: ")
+
+# dosya = open("rehber.tel","a")
+
+# dosya.write(f'\n{str({"adi":ad,"num":no})},')
+# dosya.close()
+
+# okunan = open("rehber.tel","r")
+# print(okunan.read())
+# okunan.close()
+
+
+
+
+
 
 
 # # Dosya oluşturma ve yazma GÖREVLER-7
