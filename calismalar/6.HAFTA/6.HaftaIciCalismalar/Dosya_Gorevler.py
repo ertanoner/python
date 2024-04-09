@@ -34,7 +34,28 @@
 # kla.write(f'print("Merhaba {ad}")')
 # kla.close()
 
+# #  Dosya oluşturma ve yazma GÖREVLER-5
+# fas = open("ertan.txt", "w")
+# fas.write("Adı:Ertan Öner, Sınıfı:10/A, Numarası:6106 ")
+# fas.close()
 
+
+# # Dosya oluşturma ve yazma GÖREVLER-6 - Kayıt tarihinde datetime.date komut satırı da çıkıyor. Sorulacak.
+
+# import datetime
+# bugun = datetime.date.today()
+# ad = input("Kaydedilecek kişi adı ve soyadı:      ")
+# no = input("Kaydedilecek kişi numarası: ")
+
+# dosya = open("rehber.dat","a")
+
+# dosya.write(f'\n{str({"adi":ad,"num":no, "Kayıt Tarihi":bugun})},')
+
+# dosya.close()
+
+# okunan3 = open("rehber.dat","r")
+# print(okunan3.read())
+# okunan3.close()
 
 
 

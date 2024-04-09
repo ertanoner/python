@@ -1,0 +1,4 @@
+
+{'adi': 'Ertan ÖNER', 'num': '54875', 'Kayıt Tarihi': datetime.date(2024, 4, 9)},
+{'adi': 'Baba Öner', 'num': '4747', 'Kayıt Tarihi': datetime.date(2024, 4, 9)},
+{'adi': 'Hacı ÖNER', 'num': '8888', 'Kayıt Tarihi': datetime.date(2024, 4, 9)},
