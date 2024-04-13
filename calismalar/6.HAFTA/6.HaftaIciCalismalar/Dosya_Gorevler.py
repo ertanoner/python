@@ -70,21 +70,37 @@
 
 
 
-#  Dosya oluşturma ve yazma GÖREVLER-8   kayitSayisi çlışmadı
-import random
-import ast
-ad = input("Kaydedilecek kişi adı ve soyadı:      ")
-numara = random.randint(100, 1000)
+# #  Dosya oluşturma ve yazma GÖREVLER-8   kayitSayisi çalışmadı, random numaranın tekrar verilmesi engellenmeli
+# import random
+# import ast
+# ad = input("Kaydedilecek kişi adı ve soyadı:      ")
+# numara = random.randint(100, 1000)
 
-klasor = open("ogrenciler.txt","a")
-klasor.write(f'\n{str({"adi":ad,"numara":numara})},')
+# klasor = open("ogrenciler.txt","a")
+# klasor.write(f'\n{str({"adi":ad,"numara":numara})},')
+# klasor.close()
 
-okunan = open("ogrenciler.txt","r")
-print(okunan.read())
-okunan.close()
+# okunan = open("ogrenciler.txt","r")
+# print(okunan.read())
+# okunan.close()
+
+###Bu kısım çalışmadı
+# kayitSayisi = okunan.read()
+# cevirilen = ast.literal_eval(kayitSayisi)
+# print(f"Veri {len(cevirilen)+1}.kayit olarak eklendi")
+# okunan.close()
+
+# Dosya oluşturma ve yazma GÖREVLER-9    input ile girilen ismi dosya ismi olarak yazdıramadım.
+
+# isim = input("İsminizi giriniz: ")
+# dosya = open(+isim+".txt","w")
+# dosya.write(f'{str({"Adınız:" :isim})}')
+# dosya.close()
 
 
-kayitSayisi = okunan.read()
-cevirilen = ast.literal_eval(kayitSayisi)
-print(f"Veri {len(cevirilen)+1}.kayit olarak eklendi")
-okunan.close()
+
+#    S1 = float(input("1. degeri giriniz:"))
+#     S2 = float(input("2. degeri giriniz:"))
+#     T = float(S1+S2)
+#     F = float(S1-S2)
+#     print("Toplam:{} , Fark:, {}".format(T,F))
