@@ -17,15 +17,16 @@ def Rehbermenu():
     if secim=="1":
         listele(); kisiEkle()
         listele(); Rehbermenu()
-    if secim=="2":
+    elif secim=="2":
         listele(); Rehbermenu()
-    if secim=="3":
+    elif secim=="3":
         ara(); Rehbermenu()
-    if secim=="4":
+    elif secim=="4":
         duzelt(); listele()
         Rehbermenu()
-    if secim=="5":
+    elif secim=="5":
         sil(); listele(); Rehbermenu()
+    elif secim == "ç" : exit()    
         
 def kisiEkle():
     dosya = open("RehberProgrami.txt","a")
@@ -60,12 +61,12 @@ def listele():
     # except 
     #     print("Bir hata oluştu")    
         
-        with open("RehberProgrami.txt", "r") as dosya:
+    with open("RehberProgrami.txt", "r") as dosya:
             okunan = dosya.read()
-        print("╠═════╣ KİŞİ LİSTELEME ╠═════╣")
+    print("╠═════╣ KİŞİ LİSTELEME ╠═════╣")
 
-        cevirilen = ast.literal_eval(okunan)
-        print(cevirilen)      
+    cevirilen = ast.literal_eval(okunan)
+    print(cevirilen)      
         
 def ara():
     with open("RehberProgrami.txt", "r") as dosya:
@@ -103,7 +104,6 @@ def sil():
     with open("RehberProgrami.txt","w") as dosya:
         for a in cevirilen:
             if a["adi"]!=aranan:
-                dosya.write(f"{str(a)},")       
-        
-        
+                dosya.write(f"{str(a)},")      
+
 Rehbermenu()
