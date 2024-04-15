@@ -7,13 +7,15 @@ def kayit_ekle(dosya):
     dosya = open("RehberProgrami3.txt","a")
     
     while True:
-        isim = input("isim giriniz: ")
-        soyad = input("soyad giriniz: ")
+        isim = input("isim giriniz - Lütfen ç,ı,ş harflerini kullanmayin: ")
+        soyad = input("soyad giriniz-Lütfen ç,ı,ş harflerini kullanmayin: ")
         numara = input("numara giriniz: ")
         
         
         dosya.write(str({"isim":isim,"soyad":soyad,"numara":numara})+",")
-        
+       # dosya.write(str({"isim":isim,"soyad":soyad,"numara":numara})+","+"\n") şeklinde 
+       # yazarsak txt dosyasına alt alta yazıyor fakat listelemede sorun çıkarıyor.
+       # Listelemede sorun olmaması için \n kullanmamak gerekiyor. 
          
         if devam_mi():
             continue
@@ -82,6 +84,7 @@ while True:
     5) çikiş
     
     """))
+    
     if a == 1:
         kayit_ekle(dosya)
     elif a == 2:
