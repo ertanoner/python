@@ -1,1 +1,1 @@
-{'isim': 'ertan', 'soyad': 'öner', 'numara': '1254'},{'isim': 'baris', 'soyad': 'öner', 'numara': '3214'},{'isim': 'elif', 'soyad': 'öner', 'numara': '7412'},{'isim': 'erkan', 'soyad': 'polat', 'numara': '8541'},
+{'isim': 'metin', 'soyad': 'ali', 'numara': '7474'},{'isim': 'hikmet', 'soyad': 'ulu', 'numara': '9874'},{'isim': 'saffet', 'soyad': 'torlak', 'numara': '7777'},

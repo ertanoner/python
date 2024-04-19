@@ -1,8 +1,9 @@
+# Rehber Programi
 import re,json,ast,io
 dosya = open("RehberProgrami3.txt","a")
 dosya.close()
 
-def kayit_ekle(dosya):
+def kayit_ekle():
     
     dosya = open("RehberProgrami3.txt","a")
     
@@ -42,26 +43,46 @@ def devam_mi():
 
 
 
-def kayit_listele(dosya):
+def kayit_listele():
     dosya = open("RehberProgrami3.txt","r")
     okunan = dosya.read()
     cevirilen = ast.literal_eval(okunan)
     print(cevirilen)
     
 
-def kayit_ara(dosya):
+def kayit_ara():
     dosya = open("RehberProgrami3.txt","r")
     okunan = dosya.read()
     cevirilen = ast.literal_eval(okunan)
     aranan = input("Aranan isim nedir?")
     for a in cevirilen:
-        if a["isim"]==aranan: print(a)
-        else : print("Bu isimde bir kayit yok.")
-        break
+        if a["isim"] == aranan : print(a) ; break
+        
+        # elif a["isim"]!= aranan : print("Bu isimde bir kayit yok.")
+        # break
+        # elif veya else eklediğimde aranan isim kısmını atlayıp bu isimde bir kayıt yok mesajı çıkıyor.
+    
+def duzeltme():
+    dosya = open("RehberProgrami3.txt", "r")
+    okunan = dosya.read()
+    cevirilen = ast.literal_eval(okunan)
+    aranan = input("Düzeltilecek isim nedir? ")
+    dosya.close()
+    with open("RehberProgrami3.txt","w") as dosya:
+        for a in cevirilen:
+            if a["isim"]==aranan:
+                print(a)
+                yeniAd = input("Yeni isim nedir? ")
+                yeniSoyad = input("Yeni soyad nedir? ")
+                yeniNo = input("Yeni numara nedir? ")
+                a["isim"]=yeniAd
+                a["soyad"]=yeniSoyad
+                a["numara"]=yeniNo
+            dosya.write(f"{str(a)},") 
       
 
 
-def kayit_sil(dosya):
+def kayit_sil():
     dosya = open("RehberProgrami3.txt","r")
     okunan = dosya.read()
     cevirilen = ast.literal_eval(okunan)
@@ -81,17 +102,20 @@ while True:
     2) kayitlari listele
     3) kayit ara
     4) kayit sil
-    5) çikiş
+    5) kayit düzeltme
+    6) çikiş
     
     """))
     
     if a == 1:
-        kayit_ekle(dosya)
+        kayit_ekle()
     elif a == 2:
-        kayit_listele(dosya)
+        kayit_listele()
     elif a == 3:
-        kayit_ara(dosya)
+        kayit_ara()
     elif a == 4:
-        kayit_sil(dosya)
+        kayit_sil()
     elif a == 5:
+        duzeltme()
+    elif a == 6:
         break
