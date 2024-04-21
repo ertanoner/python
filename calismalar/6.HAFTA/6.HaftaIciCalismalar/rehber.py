@@ -1,3 +1,4 @@
+# Powerpoint hazır rehber programı
 import re, json, ast
 def menu():
     #print("╔"+"═"*20+"╗")
