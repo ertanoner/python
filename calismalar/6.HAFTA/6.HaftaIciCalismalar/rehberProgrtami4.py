@@ -16,7 +16,7 @@ def kayit_ekle():
         dosya.write(str({"isim":isim,"soyad":soyad,"numara":numara})+",")
        # dosya.write(str({"isim":isim,"soyad":soyad,"numara":numara})+","+"\n") şeklinde 
        # yazarsak txt dosyasına alt alta yazıyor fakat listelemede sorun çıkarıyor.
-       # Listelemede sorun olmaması için \n kullanmamak gerekiyor. 
+       # Listelemede sorun olmaması için \n kullanmamak gerekiyor. if lie yazılırsa satır satır gösterir rehber.py dosyasında örnek var.
          
         if devam_mi():
             continue

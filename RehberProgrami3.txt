@@ -1,1 +1,1 @@
-{'isim': 'metin', 'soyad': 'ali', 'numara': '7474'},{'isim': 'hikmet', 'soyad': 'ulu', 'numara': '9874'},{'isim': 'saffet', 'soyad': 'torlak', 'numara': '7777'},
+{'isim': 'metin', 'soyad': 'ali', 'numara': '7474'},{'isim': 'hikmet', 'soyad': 'ulu', 'numara': '9874'},{'isim': 'saffet', 'soyad': 'torlak', 'numara': '7777'},{'isim': 'ertan', 'soyad': 'öner', 'numara': '125478'},

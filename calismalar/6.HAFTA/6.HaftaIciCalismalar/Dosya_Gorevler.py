@@ -1,4 +1,4 @@
-#  #  Dosya oluşturma ve yazma GÖREVLER-1
+#  Dosya oluşturma ve yazma GÖREVLER-1
 
 # dos=open("rehber.tel", "w")
 # dos.close()
