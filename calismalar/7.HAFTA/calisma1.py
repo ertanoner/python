@@ -5,7 +5,7 @@
 # app = QApplication([])
 # pencere = QWidget()
 # pencere.show()
-# app.exec()
+# app.exec()  # exec komutu pencereyi ekranda tutar.
 
 # # örnek 2
 # import sys
