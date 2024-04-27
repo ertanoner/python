@@ -42,20 +42,16 @@
 # app.exec()
 
 
-
-
 # # örnek 5 - Ekrana düğme(buton) ve etiket (label) ekleyin
 # import sys
 # from PyQt6.QtWidgets import *
 # app = QApplication(sys.argv)
-
 # x = QWidget()
 # x.show()  
 # window1 = QPushButton("Tıkla")
 # window1.show()  
 # aa = QLabel("Merhaba")
 # aa.show()
-
 # app.exec()
 
 
@@ -63,28 +59,21 @@
 # # örnek 6 -  Buton ekleyelim
 # from PyQt6.QtWidgets import *
 # aa = QApplication([])
-
 # ww = QWidget()
-
 # #icerik = QVBoxLayout()  # Q vertical box layout ından çoğaltılan içerik
 # icerik = QHBoxLayout()  # Q horizontal box layout ından çoğaltılan içerik
-
 # icerik.addWidget(QPushButton('Tıkla'))
 # icerik.addWidget(QPushButton('Dene'))
 # icerik.addWidget(QLabel('Bilgi'))
-
 # ww.setLayout(icerik)  #w ana penceredir.
-
 # ww.show()
 # aa.exec()
 
 
 # # örnek 7 - Tıklama algılama
 # from PyQt6.QtWidgets import *
-
 # app = QApplication([])
 # button = QPushButton('Click')
-
 # def on_button_clicked():
 #     alert = QMessageBox()
 #     alert.setText('Tıkladın!')
@@ -95,28 +84,88 @@
 # app.exec()
 
 
-# örnek 8
+# # örnek 8
 
-from PyQt6.QtWidgets import *
-aa = QApplication([])
-ww = QWidget()  #pencere
-ww1 = QWidget()  #pencere
+# from PyQt6.QtWidgets import *
+# aa = QApplication([])
+# ww = QWidget()  #pencere
+# ww1 = QWidget()  #pencere
 
-def icerikOlustur(xx):
-    xx.addWidget(QLabel('Kullanici Adi:'))
-    xx.addWidget(QLineEdit('Kullanici Adiniz....'))
-    xx.addWidget(QLabel('Sifre:'))
-    xx.addWidget(QLineEdit())
-    xx.addWidget(QPushButton('Giriş yap'))
+# def icerikOlustur(xx):
+#     xx.addWidget(QLabel('Kullanici Adi:'))
+#     xx.addWidget(QLineEdit('Kullanici Adiniz....'))
+#     xx.addWidget(QLabel('Sifre:'))
+#     xx.addWidget(QLineEdit())
+#     xx.addWidget(QPushButton('Giriş yap'))
 
-icerik = QVBoxLayout()
-icerikOlustur(icerik)
-ww.setLayout(icerik)
-ww.show()  
+# icerik = QVBoxLayout()
+# icerikOlustur(icerik)
+# ww.setLayout(icerik)
+# ww.show()  
 
-icerik2 = QHBoxLayout()
-icerikOlustur(icerik2)
-ww1.setLayout(icerik2)
-ww1.show()  
+# icerik2 = QHBoxLayout()
+# icerikOlustur(icerik2)
+# ww1.setLayout(icerik2)
+# ww1.show()  
 
-aa.exec()
+# aa.exec()
+
+
+
+# # örnek 9  sınıfsız gösterim
+
+# from PyQt6.QtWidgets import *
+
+# uygulama = QApplication([])
+
+# pencere = QMainWindow()
+# pencere.setWindowTitle("Çeviri")
+
+# icerik = QVBoxLayout()
+# # icerik = QHBoxLayout()
+# icerik.addWidget(QLabel("Çevrilecek: "))
+# icerik.addWidget(QLineEdit())
+# icerik.addWidget(QPushButton("Çevir"))
+# icerik.addWidget(QLabel("Sonuç: "))
+
+# araclar = QWidget()
+# araclar.setLayout(icerik)
+# pencere.setCentralWidget(araclar)
+# pencere.show()
+
+# uygulama.exec()
+
+
+# # örenk sınıflı gösterim
+
+# from PyQt6.QtWidgets import *
+
+# class ceviriPenceresi(QMainWindow):
+
+#     def __init__(self):
+#         super().__init__()
+#         self.setWindowTitle("Çeviri")
+
+#         icerik = QVBoxLayout()
+#           #icerik = QHBoxLayout()
+#         icerik.addWidget(QLabel("Çevrilecek: "))
+#         icerik.addWidget(QLineEdit())
+#         icerik.addWidget(QPushButton("Çevir"))
+#         icerik.addWidget(QLabel("Sonuç: "))
+#         araclar = QWidget()
+#         araclar.setLayout(icerik)
+#         self.setCentralWidget(araclar)
+
+# uygulama = QApplication([])
+
+# pencere = ceviriPenceresi()
+# pencere2 = ceviriPenceresi()
+# pencere3 = ceviriPenceresi()
+
+# pencere.show()
+# pencere2.show()
+# pencere3.show()
+
+# uygulama.exec() 
+
+
