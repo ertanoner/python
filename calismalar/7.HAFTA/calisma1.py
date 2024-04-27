@@ -179,22 +179,24 @@ class loginPenceresi(QMainWindow):
 
         icerik = QVBoxLayout()
         icerik.addWidget(QLabel('Kullanıcı adı:'))
-        edit1 = QLineEdit('Kullanıcı adınız...')
-        icerik.addWidget(edit1)
+        self.edit1 = QLineEdit('Kullanıcı adınız...')
+        icerik.addWidget(self.edit1)
         icerik.addWidget(QLabel('Şifre:'))
-        edit2 = QLineEdit()
-        icerik.addWidget(edit2)
-        dugme1 = QPushButton('Giriş yap')
-        icerik.addWidget(dugme1)
+        self.edit2 = QLineEdit()
+        icerik.addWidget(self.edit2)
+        self.dugme1 = QPushButton('Giriş yap')
+        icerik.addWidget(self.dugme1)
 
-        dugme1.clicked.connect(self.kontrolEt)
+        self.dugme1.clicked.connect(self.kontrolEt)
 
         araclar = QWidget()
         araclar.setLayout(icerik)
         self.setCentralWidget(araclar)
 
     def kontrolEt(self):
-        print("Düğmeye tıklandı.")    
+        print("Düğmeye tıklandı.")   
+        t1 =  self.edit1.text()
+        print("Edit1 içeriği", t1)
 
 uygulama = QApplication([])
 pencere = loginPenceresi("Giriş")
