@@ -1,0 +1,1 @@
+{'isim': 'erkan', 'soyad': 'öner', 'numara': '5619998877'},{'isim': 'ercan', 'soyad': 'ömer', 'numara': '5814447777'},{'isim': 'ayse', 'soyad': 'güral', 'numara': '5487412587'},
