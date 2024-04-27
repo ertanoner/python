@@ -60,23 +60,23 @@
 
 
 
-# örnek 6 -  Buton ekleyelim
-from PyQt6.QtWidgets import *
-aa = QApplication([])
+# # örnek 6 -  Buton ekleyelim
+# from PyQt6.QtWidgets import *
+# aa = QApplication([])
 
-ww = QWidget()
+# ww = QWidget()
 
-#icerik = QVBoxLayout()  # Q vertical box layout ından çoğaltılan içerik
-icerik = QHBoxLayout()  # Q horizontal box layout ından çoğaltılan içerik
+# #icerik = QVBoxLayout()  # Q vertical box layout ından çoğaltılan içerik
+# icerik = QHBoxLayout()  # Q horizontal box layout ından çoğaltılan içerik
 
-icerik.addWidget(QPushButton('Tıkla'))
-icerik.addWidget(QPushButton('Dene'))
-icerik.addWidget(QLabel('Bilgi'))
+# icerik.addWidget(QPushButton('Tıkla'))
+# icerik.addWidget(QPushButton('Dene'))
+# icerik.addWidget(QLabel('Bilgi'))
 
-ww.setLayout(icerik)  #w ana penceredir.
+# ww.setLayout(icerik)  #w ana penceredir.
 
-ww.show()
-aa.exec()
+# ww.show()
+# aa.exec()
 
 
 # # örnek 7 - Tıklama algılama
@@ -95,3 +95,28 @@ aa.exec()
 # app.exec()
 
 
+# örnek 8
+
+from PyQt6.QtWidgets import *
+aa = QApplication([])
+ww = QWidget()  #pencere
+ww1 = QWidget()  #pencere
+
+def icerikOlustur(xx):
+    xx.addWidget(QLabel('Kullanici Adi:'))
+    xx.addWidget(QLineEdit('Kullanici Adiniz....'))
+    xx.addWidget(QLabel('Sifre:'))
+    xx.addWidget(QLineEdit())
+    xx.addWidget(QPushButton('Giriş yap'))
+
+icerik = QVBoxLayout()
+icerikOlustur(icerik)
+ww.setLayout(icerik)
+ww.show()  
+
+icerik2 = QHBoxLayout()
+icerikOlustur(icerik2)
+ww1.setLayout(icerik2)
+ww1.show()  
+
+aa.exec()
