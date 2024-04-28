@@ -223,19 +223,7 @@ class Ekleme(QMainWindow):
         dosya=open("rhbgirilenpwd.txt","a")
         dosya.write(f"{t1} {t2} {t3}")
         dosya.close()
-        
-                   
-    #     if devam_mi():
-    #         continue
-    #     else:
-    #         break
-        
-    # def devam_mi():
-    #     a = input("yeni kayit girmek istiyor musunuz? (evet,hayir): ")
-    #     if a.lower().startswith("e"):
-    #         return True
-    #     else:
-    #         False  
+    
 
     
 class anaEkran(QMainWindow):
