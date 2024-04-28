@@ -168,7 +168,7 @@
 
 # uygulama.exec() 
 
-# örnek sınıflı gösterim
+# şifre ile menu açılımı - örnek sınıflı gösterim
 
 from PyQt6.QtWidgets import *
 
@@ -210,7 +210,7 @@ class loginPenceresi(QMainWindow):
         dosya.write(f"{t1} {t2}")
         dosya.close()
         
-        if t1 == "adm" and t2 == "11" :
+        if t1 == "adm" and t2 == "11" :      # sifre ekleme
             print("Giriş ok")
         else:
             print("İzin yok")
