@@ -172,6 +172,14 @@
 
 from PyQt6.QtWidgets import *
 
+def sifreOlustur():
+    kullaniciAdi="adm"
+    sifre = "123"
+    
+    dosya = open("rehberpwd.txt","w")
+    dosya.write(f"{kullaniciAdi} {sifre}")
+    dosya.close()
+
 class loginPenceresi(QMainWindow):
     def __init__(self,xx="Başlıksız"):
         super().__init__()
@@ -179,7 +187,7 @@ class loginPenceresi(QMainWindow):
 
         icerik = QVBoxLayout()
         icerik.addWidget(QLabel('Kullanıcı adı:'))
-        self.edit1 = QLineEdit('Kullanıcı adınız...')
+        self.edit1 = QLineEdit('\nKullanıcı adınız...')
         icerik.addWidget(self.edit1)
         icerik.addWidget(QLabel('Şifre:'))
         self.edit2 = QLineEdit()
@@ -196,8 +204,13 @@ class loginPenceresi(QMainWindow):
     def kontrolEt(self):
         print("Düğmeye tıklandı.")   
         t1 =  self.edit1.text()
+        t2 =  self.edit2.text()
         print("Edit1 içeriği", t1)
+        dosya=open("rhbgirilenpwd.txt","a")
+        dosya.write(f"{t1} {t2}")
+        dosya.close()
 
+sifreOlustur()
 uygulama = QApplication([])
 pencere = loginPenceresi("Giriş")
 pencere.show()
