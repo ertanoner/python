@@ -183,22 +183,22 @@ def sifreOlustur():
 class loginPenceresi(QMainWindow):
     def __init__(self,xx="Başlıksız"):
         super().__init__()
-        self.setWindowTitle(xx)
+        self.setWindowTitle(xx)   #QMainWindow e ait self 
 
-        icerik = QVBoxLayout()
-        icerik.addWidget(QLabel('Kullanıcı adı:'))
+        icerik = QVBoxLayout()   # sınıftan nesne örneği çıkarıyoruz. sınıf: QVBoxLayout() , bundan icerik isimli nesne örenği oluşturduk.
+        icerik.addWidget(QLabel('Kullanıcı adı:')) # vertical box a bir widget ekledik.
         self.edit1 = QLineEdit('\nKullanıcı adınız...')
         icerik.addWidget(self.edit1)
         icerik.addWidget(QLabel('Şifre:'))
-        self.edit2 = QLineEdit()
+        self.edit2 = QLineEdit('..Sifreniz...')
         icerik.addWidget(self.edit2)
         self.dugme1 = QPushButton('Giriş yap')
         icerik.addWidget(self.dugme1)
 
         self.dugme1.clicked.connect(self.kontrolEt)
 
-        araclar = QWidget()
-        araclar.setLayout(icerik)
+        araclar = QWidget()  # QWidget ten bir kalıp oluşturduk.
+        araclar.setLayout(icerik) 
         self.setCentralWidget(araclar)
 
     def kontrolEt(self):
@@ -209,6 +209,15 @@ class loginPenceresi(QMainWindow):
         dosya=open("rhbgirilenpwd.txt","a")
         dosya.write(f"{t1} {t2}")
         dosya.close()
+        
+        if t1 == "adm" and t2 == "11" :
+            print("Giriş ok")
+        else:
+            print("İzin yok")
+            dlg = QMessageBox(self)
+            dlg.setWindowTitle("Bilgilendirme!")
+            dlg.setText("İzin yok")
+            dlg.exec()    
 
 sifreOlustur()
 uygulama = QApplication([])
