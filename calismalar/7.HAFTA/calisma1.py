@@ -176,9 +176,7 @@
 # şifre ile Rehber menu açılımı Box lı - örnek sınıflı gösterim
 
 from PyQt6.QtWidgets import *
-<<<<<<< HEAD
 from PyQt5.QtWidgets import *
-=======
 import re,json,ast,io
 
 def sifreOlustur():
@@ -261,7 +259,6 @@ class anaEkran(QMainWindow):
         
     def silme(self):
         print("Silme tıklandı")
->>>>>>> 8606ca68d194436a53c966d1307213d4aab6426a
 
 class loginPenceresi(QMainWindow):
     def __init__(self,xx="Başlıksız"):
