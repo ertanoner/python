@@ -1,4 +1,4 @@
-# pyqt5 commentler  https://realpython.com/python-menus-toolbars/
+## pyqt5 commentler  https://realpython.com/python-menus-toolbars/
 # 
 # örnek 1
 # from PyQt5.QtWidgets import *
@@ -171,6 +171,7 @@
 # örnek sınıflı gösterim
 
 from PyQt6.QtWidgets import *
+from PyQt5.QtWidgets import *
 
 class loginPenceresi(QMainWindow):
     def __init__(self,xx="Başlıksız"):
