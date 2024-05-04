@@ -84,14 +84,22 @@ class EkleEkrani(QMainWindow):
     self.setWindowTitle(xx)
 
     icerik = QVBoxLayout()
-    icerik.addWidget(QLabel('Ad soyad:'))
+    icerik.addWidget(QLabel('Ad:'))
     self.edit1 = QLineEdit('')
     # self.edit1.width(50)
     icerik.addWidget(self.edit1)
-    icerik.addWidget(QLabel('Numara'))
+    
+    icerik.addWidget(QLabel('Soyad'))
     self.edit2 = QLineEdit()
-    self.edit2.setEchoMode(QLineEdit.EchoMode.Password)
+    # self.edit2.setEchoMode(QLineEdit.EchoMode.Password)
     icerik.addWidget(self.edit2)
+    
+    icerik.addWidget(QLabel('Numara'))
+    self.edit3 = QLineEdit()
+    icerik.addWidget(self.edit3)
+    
+    
+    
     self.dugme1 = QPushButton('Kaydet')
     icerik.addWidget(self.dugme1)
 
@@ -104,13 +112,15 @@ class EkleEkrani(QMainWindow):
   def kaydet(self):
     t1 = self.edit1.text()
     t2 = self.edit2.text()
+    t3 = self.edit3.text()
     print("Edit 1 içeriği:", t1)
     print("Edit 2 içeriği:", t2)
+    print("Edit 3 içeriği:", t3)
     import sqlite3
     vt = sqlite3.connect('rehber.db')
     svt = vt.cursor()
-    svt.execute("CREATE TABLE IF NOT EXISTS isimler(id INTEGER PRIMARY KEY AUTOINCREMENT,ad,nu)")
-    svt.execute(f"INSERT INTO isimler(ad,nu) VALUES ('{t1}','{t2}')")
+    svt.execute("CREATE TABLE IF NOT EXISTS isimler(id INTEGER PRIMARY KEY AUTOINCREMENT,ad,soyad,numara)")
+    svt.execute(f"INSERT INTO isimler(ad,soyad,numara) VALUES ('{t1}','{t2}','{t3}')")
     vt.commit()
     vt.close()
 
