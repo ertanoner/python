@@ -173,7 +173,7 @@
 
 
 
-# şifre ile Rehber menu açılımı Box lı - örnek sınıflı gösterim
+## şifre ile Rehber menu açılımı Box lı - örnek sınıflı gösterim
 
 from PyQt6.QtWidgets import *
 from PyQt5.QtWidgets import *
