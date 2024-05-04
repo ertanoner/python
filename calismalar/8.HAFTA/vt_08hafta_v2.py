@@ -168,7 +168,7 @@ class VeriListeEkrani(QMainWindow):
     self.setCentralWidget(araclar) # pencere widgeti ana layatunu ata
     vt.close()
 
-  def anaEkranaDon():
+  def anaEkranaDon(self):
       self.close() # mevcut pencereyi kapa
       self.ae = anaEkran('Ana ekran') # anaekran isimli pencere tanımla
       self.ae.show() # anaekran ı göster.
