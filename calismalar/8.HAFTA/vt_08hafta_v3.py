@@ -1,4 +1,4 @@
-#Ë listeleme class ı eklendi. QTableWidget diye yapıda listelemeyi yapmaya çalış
+#Ë listeleme class ı eklendi. QTableWidget diye yapıda listelemeyi yapmaya çalış.
 
 from PyQt6.QtWidgets import *
 
