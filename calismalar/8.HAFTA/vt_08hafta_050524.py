@@ -322,24 +322,24 @@ class DuzeltmeEkrani(QMainWindow):
     self.icerik.addWidget(getirB,1,0)
 
     getirB.clicked.connect(self.getir)
-    print("bulunanlar:",self.bulunanlar)
+    # print("bulunanlar:",self.bulunanlar)
     self.icerik.addWidget(QLabel('Id'),0,1)
     self.icerik.addWidget(QLabel('Adı'),0,2)
     self.icerik.addWidget(QLabel('Numarası'),0,3)
     self.duzelecekId = QLineEdit("Düzelcek id")
     self.icerik.addWidget(self.duzelecekId,3,0)
 
-    self.duzelecekId = QLineEdit("yeni ad")
-    self.icerik.addWidget(self.duzelecekId,4,0)
-    self.duzelecekId = QLineEdit("yeni numara")
-    self.icerik.addWidget(self.duzelecekId,5,0)
+    self.yeniAd = QLineEdit("yeni ad")
+    self.icerik.addWidget(self.yeniAd,4,0)
+    self.yeniNumara = QLineEdit("yeni numara")
+    self.icerik.addWidget(self.yeniNumara,5,0)
 
     self.silB = QPushButton('Düzelt')
     self.icerik.addWidget(self.silB,6,0)
     self.silB.clicked.connect(self.duzelt)
 
     self.d1 = QPushButton('Ana ekrana dön')
-    self.icerik.addWidget(self.d1,5,0) # x.satır ve 1.sütuna self.d1 widgetini yerleştir.
+    self.icerik.addWidget(self.d1,7,0) # x.satır ve 1.sütuna self.d1 widgetini yerleştir.
     self.d1.clicked.connect(self.anaEkranaDon)
 
     araclar = QWidget() # Pencere widgeti oluştur.
@@ -369,7 +369,8 @@ class DuzeltmeEkrani(QMainWindow):
     vt = sqlite3.connect('rehber.db')
     svt = vt.cursor()
     print("self.duzelecekId.text()",self.duzelecekId.text())
-    svt.execute(f"DELETE FROM isimler WHERE id='{self.duzelecekId.text()}'")
+    # svt.execute(f"DELETE FROM isimler WHERE id='{self.duzelecekId.text()}'")
+    svt.execute(f"UPDATE isimler SET ad = '{self.yeniAd.text()}', nu = '{self.yeniNumara.text()}' WHERE id = '{self.duzelecekId.text()}'")
     vt.commit()
     vt.close()
     self.close()
