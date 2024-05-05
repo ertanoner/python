@@ -135,7 +135,7 @@ class EkleEkrani(QMainWindow):
     print("Edit 2 içeriği:", t2)
     
     import sqlite3
-    vt = sqlite3.connect('rehber.db')
+    vt = sqlite3.connect('rehber2.db')
     svt = vt.cursor()
     svt.execute("CREATE TABLE IF NOT EXISTS isimler(id INTEGER PRIMARY KEY AUTOINCREMENT,ad,nu)")
     svt.execute(f"INSERT INTO isimler(ad,nu) VALUES ('{t1}','{t2}')")
@@ -152,7 +152,7 @@ class VeriListeEkrani(QMainWindow):
     self.setWindowTitle(xx)
 
     import sqlite3
-    vt = sqlite3.connect('rehber.db')
+    vt = sqlite3.connect('rehber2.db')
     svt = vt.cursor()
     liste = svt.execute(f"SELECT * FROM isimler")
     
@@ -210,7 +210,7 @@ class AramaEkrani(QMainWindow):
  
     # self.icerik.setColumnStretch(0, 2) # buna benzer bir şey ile hücre birleştirmesi yapılabilir.
     self.d1 = QPushButton('Ana ekrana dön')
-    self.icerik.addWidget(self.d1,3,1) # x.satır ve 1.sütuna self.d1 widgetini yerleştir.
+    self.icerik.addWidget(self.d1,3,0) # x.satır ve 1.sütuna self.d1 widgetini yerleştir.
     self.d1.clicked.connect(self.anaEkranaDon)
 
     araclar = QWidget() # Pencere widgeti oluştur.
@@ -220,7 +220,7 @@ class AramaEkrani(QMainWindow):
   def getir(self):
     silinecekVeri = self.silinecek.text()
     import sqlite3
-    vt = sqlite3.connect('rehber.db')
+    vt = sqlite3.connect('rehber2.db')
     svt = vt.cursor()
     gelen = svt.execute(f"SELECT * FROM isimler WHERE ad='{silinecekVeri}'")
     x=1
@@ -277,7 +277,7 @@ class SilmeEkrani(QMainWindow):
   def getir(self):
     silinecekVeri = self.silinecek.text()
     import sqlite3
-    vt = sqlite3.connect('rehber.db')
+    vt = sqlite3.connect('rehber2.db')
     svt = vt.cursor()
     gelen = svt.execute(f"SELECT * FROM isimler WHERE ad='{silinecekVeri}'")
     x=1
@@ -294,7 +294,7 @@ class SilmeEkrani(QMainWindow):
 
   def sil(self):
     import sqlite3
-    vt = sqlite3.connect('rehber.db')
+    vt = sqlite3.connect('rehber2.db')
     svt = vt.cursor()
     print("self.silinecekId.text()",self.silinecekId.text())
     svt.execute(f"DELETE FROM isimler WHERE id='{self.silinecekId.text()}'")
@@ -349,7 +349,7 @@ class DuzeltmeEkrani(QMainWindow):
   def getir(self):
     silinecekVeri = self.silinecek.text()
     import sqlite3
-    vt = sqlite3.connect('rehber.db')
+    vt = sqlite3.connect('rehber2.db')
     svt = vt.cursor()
     gelen = svt.execute(f"SELECT * FROM isimler WHERE ad='{silinecekVeri}'")
     x=1
@@ -366,7 +366,7 @@ class DuzeltmeEkrani(QMainWindow):
 
   def duzelt(self):
     import sqlite3
-    vt = sqlite3.connect('rehber.db')
+    vt = sqlite3.connect('rehber2.db')
     svt = vt.cursor()
     print("self.duzelecekId.text()",self.duzelecekId.text())
     # svt.execute(f"DELETE FROM isimler WHERE id='{self.duzelecekId.text()}'")
