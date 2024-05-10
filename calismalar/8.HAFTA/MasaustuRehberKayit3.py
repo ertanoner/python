@@ -1,4 +1,6 @@
 from PyQt6.QtWidgets import *
+import sys
+from PySide6 import QtCore
 
 def sifreOlustur():
   kullaniciAdi = "admin"
@@ -60,17 +62,15 @@ class anaEkran(QMainWindow):
     self.duzeltme = DuzeltmeEkrani('Kayıt Düzeltme')
     self.duzeltme.show()
 
-
-
 class loginPenceresi(QMainWindow):
   def __init__(self,xx="Başlıksız"):
     super().__init__()
     self.setWindowTitle(xx)
-
+#   self.setWindowFlag(QtCore.Qt.WindowCloseButtonHint, False)
+    self.setWindowFlags(self.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint) # ekleme
     icerik = QVBoxLayout()
     icerik.addWidget(QLabel('Kullanıcı adı:'))
     self.edit1 = QLineEdit('Kullanıcı adınız...')
-    # self.edit1.width(50)
     icerik.addWidget(self.edit1)
     icerik.addWidget(QLabel('Şifre:'))
     self.edit2 = QLineEdit()
@@ -106,7 +106,7 @@ class loginPenceresi(QMainWindow):
       dlg.setWindowTitle("Bilgilendirme!")
       dlg.setText("İzin yok")
       dlg.exec()
-
+  
 class EkleEkrani(QMainWindow):
   def __init__(self,xx="Başlıksız"):
     super().__init__()
@@ -403,6 +403,7 @@ uygulama = QApplication([])
 pencere = loginPenceresi("REHBER")
 pencere.show()
 uygulama.exec() 
+
 pencere = anaEkran("REHBER")
 pencere.show()
 uygulama.exec() 
