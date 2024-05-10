@@ -8,7 +8,7 @@ def sifreOlustur():
   dosya.close()
 
 class anaEkran(QMainWindow):
-  def __init__(self,xx="Başlıksız"):
+  def __init__(self,xx="Rehber"):
     super().__init__()
     self.setWindowTitle(xx)
 
@@ -42,7 +42,7 @@ class anaEkran(QMainWindow):
 
   def listele(self):
     self.close()
-    self.listeleme = VeriListeEkrani('Kayıt Ekleme')
+    self.listeleme = VeriListeEkrani('Kayıt Listeleme')
     self.listeleme.show()
 
   def ara(self):
@@ -61,7 +61,7 @@ class anaEkran(QMainWindow):
     self.duzeltme.show()
 
 class loginPenceresi(QMainWindow):
-  def __init__(self,xx="Başlıksız"):
+  def __init__(self,xx="Rehber"):
     super().__init__()
     self.setWindowTitle(xx)
     # self.setWindowFlags(self.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint) # ekleme
@@ -105,7 +105,7 @@ class loginPenceresi(QMainWindow):
       dlg.exec()
   
 class EkleEkrani(QMainWindow):
-  def __init__(self,xx="Başlıksız"):
+  def __init__(self,xx="Rehber"):
     super().__init__()
     self.setWindowTitle(xx)
 
@@ -153,7 +153,7 @@ class EkleEkrani(QMainWindow):
     self.ae.show() # anaekran ı göster.
 
 class VeriListeEkrani(QMainWindow):
-  def __init__(self,xx="Başlıksız"):
+  def __init__(self,xx="Rehber"):
     super().__init__()
     self.setWindowTitle(xx)
 
@@ -196,7 +196,7 @@ class AramaEkrani(QMainWindow):
     self.ae = anaEkran('Ana ekran') # anaekran isimli pencere tanımla
     self.ae.show() # anaekran ı göster.
 
-  def __init__(self,xx="Başlıksız"):
+  def __init__(self,xx="Rehber"):
     super().__init__()
     self.setWindowTitle(xx)
    
@@ -249,7 +249,7 @@ class SilmeEkrani(QMainWindow):
     self.ae = anaEkran('Ana ekran') # anaekran isimli pencere tanımla
     self.ae.show() # anaekran ı göster.
 
-  def __init__(self,xx="Başlıksız"):
+  def __init__(self,xx="Rehber"):
     super().__init__()
     self.setWindowTitle(xx)
    
@@ -323,7 +323,7 @@ class DuzeltmeEkrani(QMainWindow):
     self.ae = anaEkran('Ana ekran') # anaekran isimli pencere tanımla
     self.ae.show() # anaekran ı göster.
 
-  def __init__(self,xx="Başlıksız"):
+  def __init__(self,xx="Rehber"):
     super().__init__()
     self.setWindowTitle(xx)
    
