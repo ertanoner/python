@@ -1,6 +1,4 @@
 from PyQt6.QtWidgets import *
-import sys
-from PySide6 import QtCore
 
 def sifreOlustur():
   kullaniciAdi = "admin"
@@ -66,7 +64,7 @@ class loginPenceresi(QMainWindow):
   def __init__(self,xx="Başlıksız"):
     super().__init__()
     self.setWindowTitle(xx)
-    self.setWindowFlags(self.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint) # ekleme
+    # self.setWindowFlags(self.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint) # ekleme
     icerik = QVBoxLayout()
     icerik.addWidget(QLabel('Kullanıcı adı:'))
     self.edit1 = QLineEdit('Kullanıcı adınız...')
