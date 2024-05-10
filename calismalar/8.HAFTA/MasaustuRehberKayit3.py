@@ -406,4 +406,3 @@ uygulama.exec()
 pencere = anaEkran("REHBER")
 pencere.show()
 uygulama.exec() 
-
