@@ -66,7 +66,6 @@ class loginPenceresi(QMainWindow):
   def __init__(self,xx="Başlıksız"):
     super().__init__()
     self.setWindowTitle(xx)
-#   self.setWindowFlag(QtCore.Qt.WindowCloseButtonHint, False)
     self.setWindowFlags(self.windowFlags() & ~QtCore.Qt.WindowCloseButtonHint) # ekleme
     icerik = QVBoxLayout()
     icerik.addWidget(QLabel('Kullanıcı adı:'))
@@ -178,7 +177,7 @@ class VeriListeEkrani(QMainWindow):
         icerik.addWidget(QLabel(a[3]),x,3)
         x+=1
 
-    # icerik.setColumnStretch(0, 2) # buna benzer bir şey ile hücre birleştirmesi yapılabilir.
+
     self.d1 = QPushButton('Ana ekrana dön')
     icerik.addWidget(self.d1,x,1) # x.satır ve 1.sütuna self.d1 widgetini yerleştir.
     self.d1.clicked.connect(self.anaEkranaDon)
@@ -203,7 +202,7 @@ class AramaEkrani(QMainWindow):
     super().__init__()
     self.setWindowTitle(xx)
    
-    # icerik = QVBoxLayout()
+
     self.icerik = QGridLayout()
     self.silinecek = QLineEdit()
     self.icerik.addWidget(self.silinecek,0,0)
@@ -216,11 +215,10 @@ class AramaEkrani(QMainWindow):
     self.icerik.addWidget(QLabel('Adı'),0,2)
     self.icerik.addWidget(QLabel('Soyadı'),0,3)
     self.icerik.addWidget(QLabel('T.Numarası'),0,4)
-    # adL = QLabel('...')
-    # nuL = QLabel('...')
+
 
  
-    # self.icerik.setColumnStretch(0, 2) # buna benzer bir şey ile hücre birleştirmesi yapılabilir.
+
     self.d1 = QPushButton('Ana ekrana dön')
     self.icerik.addWidget(self.d1,3,0) # x.satır ve 1.sütuna self.d1 widgetini yerleştir.
     self.d1.clicked.connect(self.anaEkranaDon)
@@ -257,7 +255,7 @@ class SilmeEkrani(QMainWindow):
     super().__init__()
     self.setWindowTitle(xx)
    
-    # icerik = QVBoxLayout()
+
     self.icerik = QGridLayout()
     self.silinecek = QLineEdit()
     self.icerik.addWidget(self.silinecek,0,0)
@@ -280,7 +278,7 @@ class SilmeEkrani(QMainWindow):
     self.silB.clicked.connect(self.sil)
 
  
-    # self.icerik.setColumnStretch(0, 2) # buna benzer bir şey ile hücre birleştirmesi yapılabilir.
+
     self.d1 = QPushButton('Ana ekrana dön')
     self.icerik.addWidget(self.d1,5,0) # x.satır ve 1.sütuna self.d1 widgetini yerleştir.
     self.d1.clicked.connect(self.anaEkranaDon)
@@ -331,7 +329,6 @@ class DuzeltmeEkrani(QMainWindow):
     super().__init__()
     self.setWindowTitle(xx)
    
-    # icerik = QVBoxLayout()
     self.icerik = QGridLayout()
     self.silinecek = QLineEdit()
     self.icerik.addWidget(self.silinecek,0,0)
@@ -339,7 +336,6 @@ class DuzeltmeEkrani(QMainWindow):
     self.icerik.addWidget(getirB,1,0)
 
     getirB.clicked.connect(self.getir)
-    # print("bulunanlar:",self.bulunanlar)
     self.icerik.addWidget(QLabel('Id'),0,1)
     self.icerik.addWidget(QLabel('Adı'),0,2)
     self.icerik.addWidget(QLabel('Soyadı'),0,3)
@@ -390,7 +386,6 @@ class DuzeltmeEkrani(QMainWindow):
     vt = sqlite3.connect('rehber3.db')
     svt = vt.cursor()
     print("self.duzelecekId.text()",self.duzelecekId.text())
-    # svt.execute(f"DELETE FROM isimler WHERE id='{self.duzelecekId.text()}'")
     svt.execute(f"UPDATE isimler SET ad = '{self.yeniAd.text()}', soyad = '{self.yeniSoyad.text()}', numara = '{self.yeniNumara.text()}' WHERE id = '{self.duzelecekId.text()}'")
     vt.commit()
     vt.close()
@@ -401,9 +396,5 @@ class DuzeltmeEkrani(QMainWindow):
 sifreOlustur()
 uygulama = QApplication([])
 pencere = loginPenceresi("REHBER")
-pencere.show()
-uygulama.exec() 
-
-pencere = anaEkran("REHBER")
 pencere.show()
 uygulama.exec() 
