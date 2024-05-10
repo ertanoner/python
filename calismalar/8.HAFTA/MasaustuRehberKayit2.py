@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import *
 
 def sifreOlustur():
-  kullaniciAdi = "adm"
+  kullaniciAdi = "admin"
   sifre = "123"
   dosya = open("rhbpwd.txt","w")
   dosya.write(f"{kullaniciAdi} {sifre}")
@@ -95,7 +95,7 @@ class loginPenceresi(QMainWindow):
     dosya.write(f"{t1} {t2}")
     dosya.close()
 
-    if t1=="q" and t2 == "q" :
+    if t1=="admin" and t2 == "123" :
       print("Giriş ok")
       self.close()
       self.ap = anaEkran()
@@ -400,7 +400,9 @@ class DuzeltmeEkrani(QMainWindow):
         
 sifreOlustur()
 uygulama = QApplication([])
-# pencere = loginPenceresi("REHBER")
+pencere = loginPenceresi("REHBER")
+pencere.show()
+uygulama.exec() 
 pencere = anaEkran("REHBER")
 pencere.show()
 # anaPencere = anaEkran("MENU")
